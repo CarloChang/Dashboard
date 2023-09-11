@@ -1,3 +1,4 @@
+/*General*/
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -13,6 +14,10 @@ a {
     grid-template-rows: 1fr 4fr;
 }
 
+.bold {
+    font-weight: bold;
+}
+/*General*/
 /*Dashboard*/
 
 .dashboard { 
@@ -56,12 +61,57 @@ a {
 }
 
 /*Dashboard*/
+/*Nav*/
 
 .nav {
     background-color: #eff6ff;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    padding: 3vh 5vw 3vh 2vw;
 }
+
+.upper-nav, .lower-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Upper Nav*/
+
+.upper-nav svg {
+    width: 1.5rem;
+}
+
+.searchbar input{
+    width: 40vw;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 10px;
+}
+
+.user, .searchbar {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.user img {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%; 
+}
+
+.user p {
+    font-size: 1.2rem;
+
+}
+
+
+/*Upper Nav*/
+
+
+
+/*Nav*/
 
 .main {
     background-color: #93c5fd;
