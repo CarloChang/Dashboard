@@ -21,7 +21,7 @@ a {
 /*Dashboard*/
 
 .dashboard { 
-    background-color: #0284c7;
+    background-color: #3b0764;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     color: #FFF;
@@ -58,13 +58,18 @@ a {
 .dashboard a {
     color: #FFF;
     font-size: 1.5rem;
+    transition: 1ms;
+}
+
+.dashboard a:hover {
+    text-decoration: underline;
 }
 
 /*Dashboard*/
 /*Nav*/
 
 .nav {
-    background-color: #eff6ff;
+    background-color: #faf5ff;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     padding: 3vh 5vw 3vh 2vw;
@@ -78,7 +83,7 @@ a {
 
 /*Upper Nav*/
 
-.upper-nav svg {
+.nav svg {
     width: 1.5rem;
 }
 
@@ -95,7 +100,7 @@ a {
     gap: 1vw;
 }
 
-.user img {
+.pfp {
     width: 3vw;
     height: 3vw;
     border-radius: 100%; 
@@ -108,13 +113,104 @@ a {
 
 
 /*Upper Nav*/
+/*Lower Nav*/
 
+.lower-nav {
+    padding-top: 2vh;
+}
 
+.left-lower-nav {
+    display: flex;
+    gap: 2.5vw;
+    align-items: center;
+}
 
+.big-pfp {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+}
+
+.greetings {
+    font-weight: bold;
+}
+
+.username {
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+.right-lower-nav {
+    display: flex;
+}
+
+.right-lower-nav button {
+    background-color: #3b0764;
+    color: #FFF;
+    width: 9.5vw;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.right-lower-nav button:hover {
+    background-color: #5e0a9f;
+}
+
+button svg {
+    fill: #FFF;
+}
+
+/*Lower Nav*/
 /*Nav*/
 
+/*main*/
+
 .main {
-    background-color: #93c5fd;
+    background-color: #f3e8ff;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 2vw;
+    padding: 3vh 2vw;
+}
+/*Projects*/
+
+.projects {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2vw;
+    height: fit-content;
+}
+
+.projects h2 {
+    grid-column: 1/-1;
+    grid-row: 1 / 1;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+}
+
+.project {
+    border: 1px solid black;
+    width: 30vw;
+}
+
+.projects img {
+    max-height: 15vw;
+}
+
+.projects svg {
+    width: 2vw;
+}
+
+/*Projects*/
+.announcements, .trending {
+    grid-column: 2/3;
 }
