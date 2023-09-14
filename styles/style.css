@@ -11,7 +11,7 @@ a {
 .container { /*Big container*/
     display: grid;
     grid-template-columns: 0.8fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 0.5fr 4fr;
 }
 
 .bold {
@@ -179,12 +179,25 @@ button svg {
     gap: 2vw;
     padding: 3vh 2vw;
 }
+
+.side-content {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw; 
+}
+
+.project, .announcement, .user-block {
+    box-shadow: 0 0 5px 1px;
+    background-color: #FFF;
+}
 /*Projects*/
 
 .projects {
     grid-column: 1/2;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: auto 1fr;
     gap: 2vw;
     height: fit-content;
 }
@@ -198,8 +211,13 @@ button svg {
 }
 
 .project {
-    border: 1px solid black;
+    background-color: #FFF;
     width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1px 5px;
+    gap: 5px;
 }
 
 .projects img {
@@ -210,7 +228,18 @@ button svg {
     width: 2vw;
 }
 
-/*Projects*/
-.announcements, .trending {
-    grid-column: 2/3;
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
+/*Projects*/
+/*Announcements*/
+
+.announcement h4{
+    margin: 0;
+    padding: 0;
+}
+
+/*Announcements*/
