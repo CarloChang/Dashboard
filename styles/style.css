@@ -73,6 +73,8 @@ a {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     padding: 3vh 5vw 3vh 2vw;
+    box-shadow: 6px 9px 10px -7px rgba(0,0,0,0.33);
+    z-index: 10;
 }
 
 .upper-nav, .lower-nav {
@@ -187,9 +189,10 @@ button svg {
     gap: 2vw; 
 }
 
-.project, .announcement, .user-block {
-    box-shadow: 0 0 5px 1px;
+.project, .announcements, .trending {
+    box-shadow: 6px 9px 10px -7px rgba(0,0,0,0.33);
     background-color: #FFF;
+    border-radius: 1vw;
 }
 /*Projects*/
 
@@ -216,16 +219,26 @@ button svg {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1px 5px;
+    padding: 5px 10px;
     gap: 5px;
 }
 
 .projects img {
     max-height: 15vw;
+    transition: 1s;
 }
 
 .projects svg {
     width: 2vw;
+    transition: 0.3s;
+}
+
+.projects img:hover{
+    transform: scale(1.01);
+}
+
+.projects svg:hover {
+    fill: #5e0a9f;
 }
 
 .icons {
@@ -237,9 +250,40 @@ button svg {
 /*Projects*/
 /*Announcements*/
 
+.announcement, .user-block {
+    padding: 1vh 1vw;
+}
+
+.up {
+    padding-top: 3vh;
+}
+
+.down {
+    padding-bottom: 3vh;
+}
+
+.title{
+    box-shadow: none;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .announcement h4{
     margin: 0;
     padding: 0;
 }
 
+.announcement p {
+    color: #636363;
+}
+
+hr {
+    width: 80%;
+    color: rgba(0,0,0,0.75);
+}
+
 /*Announcements*/
+/*Trending*/
+
+/*Trending*/
