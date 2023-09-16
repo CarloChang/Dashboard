@@ -274,7 +274,7 @@ button svg {
     padding: 0;
 }
 
-.announcement p {
+.announcement p, .name {
     color: #636363;
 }
 
@@ -285,5 +285,17 @@ hr {
 
 /*Announcements*/
 /*Trending*/
+
+.user-block {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.user-trending {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
 
 /*Trending*/
